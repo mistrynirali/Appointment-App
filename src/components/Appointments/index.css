@@ -1,0 +1,134 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+} */
+.app-container {
+  background-image: linear-gradient(#fbc7d4, #9796f0);
+  min-height: 100vh;
+  padding: 1rem;
+}
+.card-container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.heading {
+  font-weight: 500;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #171f46;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.title,
+date {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #b5b7c4;
+  margin-bottom: 0.5rem;
+}
+input {
+  padding: 0.6rem 1.4rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #171f46;
+  border-radius: 5px;
+}
+.title-input ::placeholder {
+  color: #b5b7c4;
+}
+.date-input {
+  color: #171f46;
+}
+.add-button {
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8em 1.8em;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+.line {
+  border: 1px solid #dee0e3;
+  width: 100%;
+  margin-top: 16px;
+}
+.image {
+  display: none;
+}
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.appointment-heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+.starred-button {
+  background-color: transparent;
+  color: #9897f0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: 2px solid #9897f0;
+  padding: 0.4rem 1.5rem;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+}
+.ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.active-star {
+  background-color: #9897f0;
+  color: white;
+}
+@media (min-width: 768px) {
+  .app-container {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container {
+    min-height: unset;
+    padding: 3rem;
+  }
+  .heading {
+    margin-top: unset;
+  }
+  .form-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  form {
+    width: 300px;
+  }
+  .image {
+    display: inline-block;
+    width: 50%;
+  }
+  .ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
