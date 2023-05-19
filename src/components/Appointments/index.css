@@ -1,18 +1,22 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto';
-} */
-.app-container {
+}
+.app-conatainer {
   background-image: linear-gradient(#fbc7d4, #9796f0);
   min-height: 100vh;
-  padding: 1rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card-container {
+.card-conatainer {
   background-color: white;
   padding: 1.5rem;
   border-radius: 15px;
+  margin-top: 40px;
 }
 .heading {
   font-weight: 500;
@@ -55,11 +59,13 @@ input {
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 0.8em 1.8em;
-  margin-bottom: 1rem;
+  height: 30px;
+  width: 70px;
   cursor: pointer;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 .line {
   border: 1px solid #dee0e3;
@@ -74,6 +80,7 @@ input {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
+  margin-top: 10px;
 }
 .appointment-heading {
   font-size: 20px;
@@ -105,11 +112,13 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
   }
 
   .card-container {
     min-height: unset;
-    padding: 3rem;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   .heading {
     margin-top: unset;
@@ -124,7 +133,8 @@ input {
   }
   .image {
     display: inline-block;
-    width: 50%;
+    width: 30%;
+    margin-bottom: 20px;
   }
   .ul {
     flex-direction: row;
