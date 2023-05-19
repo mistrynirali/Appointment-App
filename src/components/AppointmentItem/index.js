@@ -1,10 +1,11 @@
 import './index.css'
+import {format} from 'date-fns'
 
 const AppointmentItem = props => {
   const {appointmentDetails, toggleIsStared} = props
   const {title, date, isStared, id} = appointmentDetails
 
-  const formatDate = (new Date(date), 'dd MMMM yyyy, EEEE')
+  const formatDate = format(new Date(date), 'dd MMMM yyyy, EEEE')
 
   const onClickstarButton = () => {
     toggleIsStared(id)
@@ -27,8 +28,8 @@ const AppointmentItem = props => {
         >
           <img src={imgUrl} alt="star" />
         </button>
-        <p className="date">{formatDate}</p>
       </div>
+      <p className="date">{formatDate}</p>
     </li>
   )
 }
