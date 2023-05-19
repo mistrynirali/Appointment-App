@@ -122,13 +122,13 @@ class Appointments extends Component {
             >
               Starred
             </button>
-
-            <ul className="ul">
-              {isStared
-                ? renderList(starredAppointment)
-                : renderList(appointmentsList)}
-            </ul>
           </div>
+
+          <ul className="ul">
+            {isStared
+              ? renderList(starredAppointment)
+              : renderList(appointmentsList)}
+          </ul>
         </div>
       </div>
     )
